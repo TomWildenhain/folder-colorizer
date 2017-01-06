@@ -1,0 +1,32 @@
+﻿<Window x:Class="Colorizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Colorizer" Height="350" Width="200" Topmost="True" Icon="Logo.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="20px"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Background="#f00" Name="RectRed">Contents not sorted</TextBlock>
+        <TextBlock Grid.Row="1" Background="#f80" Name="RectOrange">Should be moved</TextBlock>
+        <TextBlock Grid.Row="2" Background="#0b0" Name="RectGreen">Sorted</TextBlock>
+        <TextBlock Grid.Row="3" Background="#05f" Name="RectBlue">Missing files to be added</TextBlock>
+        <TextBlock Grid.Row="4" Background="#50f" Name="RectViolet"></TextBlock>
+        <TextBlock Grid.Row="5" Background="#ff9" Name="RectClear">Clear Colors</TextBlock>
+        <Grid Grid.Row="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Background="#555" Name="RectHash1">Hash 1</TextBlock>
+            <TextBlock Grid.Column="1"  Background="#777" Name="RectHash2">Hash 2</TextBlock>
+        </Grid>
+        <TextBlock Grid.Row="7" Background="#000" Name="HashResult">No Match</TextBlock>
+    </Grid>
+</Window>
